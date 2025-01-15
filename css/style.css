@@ -254,6 +254,27 @@ body {
     50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 }
 
+.section-subtitle {
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin: 3rem 0 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(45deg, var(--accent-color), var(--gradient-end));
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
